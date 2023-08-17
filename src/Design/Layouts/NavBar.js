@@ -1,27 +1,35 @@
 import React from "react";
+import companyLogo from "../Assets/companyLogo.png";
 
 export default function NavBar() {
   return (
-    <div>
-      <div class="container">
-        <div class="row">
+    <div className="navBar">
+      <div >
+        <div >
+          <div class="col-md-12 d-flex justify-content-center align-items-center">
+            <div class="d-flex">
+              <img src={companyLogo} alt="company Logo" />
+              <h1>Site Name</h1>
+            </div>
+          </div>
+          <div class="col-md-12 mx-5 px-5">
+            <div class="row mx-5 px-5">
+              <div class="col-sm-3">
+                <a href="">Home</a>
+              </div>
+              <div class="col-sm-3 ">
+                <a href="">Pricing</a>
+              </div>
+              <div class="col-sm-3 ">
+                <a href="">Blogs</a>
+              </div>
+              <div class="col-sm-3 ">
+                <a href="">About</a>
+              </div>
+            </div>
+          </div>
           <div class="col-md-12">
-            <div class="navbar">
-              <h2>Column 1</h2>
-              <p>This is content for the first column.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="p-3">
-              <h2>Column 1</h2>
-              <p>This is content for the first column.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="p-3">
-              <h2>Column 2</h2>
-              <p>This is content for the second column.</p>
-            </div>
+            <hr />
           </div>
         </div>
       </div>
